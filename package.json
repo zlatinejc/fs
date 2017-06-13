@@ -1,0 +1,36 @@
+{
+  "name": "fs-js",
+  "version": "1.0.4",
+  "description": "A native module for effectively working with files built on top of Node's famous fs module.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zlatinejc/fs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zlatinejc",
+  "license": "MIT",
+  "keywords":[
+    "fs-js",
+    "fs",
+    "filesystem",
+    "file",
+    "files",
+    "rw",
+    "dir",
+    "link",
+    "unlink",
+    "sync",
+    "async",
+    "read",
+    "write",
+    "directory",
+    "directories",
+    "append",
+    "reading",
+    "writing",
+    "appending"
+  ]
+}
