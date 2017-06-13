@@ -50,12 +50,44 @@ fs.open('myfile', 'r', (err, fd) => {
 });
 ```
 
-### Append file
+## Write file
 
+```js
+fs.open('myfile', 'wx', (err, fd) => {
+  if (err) {
+    if (err.code === 'EEXIST') {
+      console.error('myfile already exists');
+      return;
+    }
+
+    throw err;
+  }
+
+  writeMyData(fd);
+});
+```
+
+## Delete file
+```js
+const fs = require('fs');
+
+fs.unlink('/tmp/hello', (err) => {
+  if (err) throw err;
+  console.log('successfully deleted /tmp/hello');
+});
+```
+## Append file
 ```js
 fs.appendFile('message.txt', 'data to append', (err) => {
   if (err) throw err;
   console.log('The "data to append" was appended to file!');
+});
+```
+## Rename file
+```js
+fs.rename('/tmp/hello', '/tmp/world', (err) => {
+  if (err) throw err;
+  console.log('renamed complete');
 });
 ```
 
