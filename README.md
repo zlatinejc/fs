@@ -91,7 +91,7 @@ fs.rename('/tmp/hello', '/tmp/world', (err) => {
 
 ## Documentation
 
-Public accessible documentation is located [here](https://nodejs.org/api/fs.html).
+Publicly accessible documentation is located [here](https://nodejs.org/api/fs.html).
 
 ## License
 
